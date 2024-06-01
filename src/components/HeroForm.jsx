@@ -58,7 +58,7 @@ const HeroForm = () => {
   };
 
   return (
-    <section className="flex flex-col self-stretch py-6">
+    <section className="flex flex-col self-stretch py-6" id="apply_now_section">
       <header className="justify-center flex p-1.5 text-xs font-semibold leading-4 text-white uppercase bg-pink-500 rounded-t-xl">
         Fill the form below to enquire
       </header>

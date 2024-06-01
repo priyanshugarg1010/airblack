@@ -7,6 +7,11 @@ import twitter from "../assets/svg/twitter.svg";
 import linkedin from "../assets/svg/linkedin.svg";
 
 const Footer = () => {
+  const scrollToSection = () => {
+    document
+      .getElementById("apply_now_section")
+      .scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <footer className="flex  relative ">
       <img
@@ -35,20 +40,21 @@ const Footer = () => {
         <button
           className="justify-center flex items-center px-16 py-2.5 mt-8 font-semibold rounded bg-[linear-gradient(90deg,#F56563_0%,#E54988_100%)] leading-[120%] text-neutral-50"
           type="button"
+          onClick={scrollToSection}
         >
           Apply Now
         </button>
         <div className="flex flex-row justify-center items-center gap-4 mt-8">
-          <a href="">
+          <a href="https://www.instagram.com/">
             <img src={instagram} alt="instagram icon" />
           </a>
-          <a href="">
+          <a href="https://www.facebook.com/">
             <img src={facebook} alt="facebook icon" />
           </a>
-          <a href="">
+          <a href="https://www.linkedin.com/">
             <img src={linkedin} alt="linkedin icon" />
           </a>
-          <a href="">
+          <a href="https://x.com/">
             <img src={twitter} alt="twitter icon" />
           </a>
         </div>
